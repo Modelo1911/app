@@ -1,16 +1,27 @@
 import "./Product.css";
-import QuantityPicker from './QuantityPicker';
-function Product(props) {
-    return (
-        <div className="product">
-            <img src="https://picsum.photos/200" />
-            <h5>{props.info.title}</h5>
-            <label>${props.info.price}</label>
+import QuantityPicker from "./QuantityPicker";
+import constants from '../common/config';
 
-            <QuantityPicker />
-        </div>
-    );
+function Product(props) {
+  function add() {
+    console.log('adding prduct')
+  }
+
+  if (!props.info){
+    return <div>Loading...</div>;
+  }
+  return (
+    <div className="product">
+      <img src={constants.IMAGE_PATH + props.info.image} alt="" />
+      <h5>{props.info.title}</h5>
+      <label>${props.info.price}</label>
+      
+
+      <QuantityPicker />
+
+      <button onClick={add}>Add Here</button>
+    </div>
+  );
 }
 
 export default Product;
-
