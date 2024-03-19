@@ -19,7 +19,7 @@ function Product(props) {
 
       <QuantityPicker />
 
-      <button onClick={add}>Add Here</button>
+      <button onClick={add} className="btn btn-sm btn-outline-success">Add Here</button>
     </div>
   );
 }

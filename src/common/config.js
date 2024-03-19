@@ -1,5 +1,5 @@
 let constants = {
-    IMAGE_PATH: "/images/",
+    IMAGE_PATH: "/image/",
     STORE_NAME: 'OraniKa',
 };
 

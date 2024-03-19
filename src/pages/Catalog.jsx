@@ -7,7 +7,7 @@ function Catalog() {
       title: "Aloe Vera",
       price: 2.99,
       category: "Plant",
-      image: "Aloe plant.jpg",
+      image: "Aloe.jpg",
       _id: 1,
     },
 
@@ -20,10 +20,10 @@ function Catalog() {
     },
 
     {
-      title: "Pepper",
+      title: " Bell Pepper",
       price: 4.99,
       category: "Plant",
-      image: "red pepper plant.jpg",
+      image: "pepper.jpg",
       _id: 3,
     },
 
