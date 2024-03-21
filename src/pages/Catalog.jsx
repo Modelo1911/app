@@ -64,7 +64,7 @@ function Catalog() {
     <div className="catalog page">
       <h1>Our Catalog!</h1>
 
-      {data.map(prod => <Product  key={prod._id}info={prod} />)}
+      {data.map((prod) => (<Product  key={prod._id} info={prod} />))}
     </div>
   );
 }

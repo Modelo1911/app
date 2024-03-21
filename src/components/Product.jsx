@@ -1,13 +1,13 @@
 import "./Product.css";
 import QuantityPicker from "./QuantityPicker";
-import constants from '../common/config';
+import constants from "../common/config";
 
 function Product(props) {
   function add() {
-    console.log('adding prduct')
+    console.log("adding prduct");
   }
 
-  if (!props.info){
+  if (!props.info) {
     return <div>Loading...</div>;
   }
   return (
@@ -15,11 +15,12 @@ function Product(props) {
       <img src={constants.IMAGE_PATH + props.info.image} alt="" />
       <h5>{props.info.title}</h5>
       <label>${props.info.price}</label>
-      
 
       <QuantityPicker />
 
-      <button onClick={add} className="btn btn-info">Add Here</button>
+      <button onClick={add} className="btn btn-info">
+        Add Here
+      </button>
     </div>
   );
 }
