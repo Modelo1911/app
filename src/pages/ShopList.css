@@ -1,4 +1,12 @@
+.shop-list {
+    
+}
+
 .shop-list box {
     margin: auto;
     width: 500px;
+}
+
+.shop-list ul {
+    list-style: none;
 }
