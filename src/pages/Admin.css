@@ -1,15 +1,46 @@
 .admin h1 {
-    color: darkcyan;
-  }
-  
-  .admin .parent {
-    display: flex;
-  }
-  
-  .admin .prods {
-    flex: 2;
-  }
-  
-  .admin .coupons {
-    flex: 1;
-  }
+  color: darkcyan;
+}
+
+.admin .parent {
+  display: flex;
+  justify-content: center;
+  margin: 2 auto;
+  height: 10vh;
+  vertical-align: top;
+}
+
+.admin .prods {
+  flex: 1;
+  margin: 0 20px;
+  max-width: 400px;
+  margin-left: 3rem;
+}
+
+.admin .coupons {
+  flex: 1;
+  margin: 2 20px;
+  max-width: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.admin .form {
+  border: 3px solid #333;
+  border-radius: 3px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 2 auto;
+  vertical-align: top;
+}
+
+.admin .form div {
+  margin-bottom: 10px;
+}
+
+.admin .form .ul {
+  list-style: none;
+}
+
+/**react context api**/
