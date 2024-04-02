@@ -21,3 +21,21 @@
   height: 190px;
   margin-top: 0.5rem;
 }
+
+.product .price {
+  font-size: 18px;
+  margin: 0 10px;
+
+}
+
+.product .total {
+  font-size: 18px;
+  margin: 0 10px;
+
+}
+
+.product .control{
+  display: flex;
+  justify-content: space-around;
+}
+

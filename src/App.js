@@ -8,26 +8,29 @@ import About from "./pages/About";
 import ShopList from "./pages/ShopList";
 import Home from "./pages/Home";
 import Admin from "./pages/Admin";
+import GlobalProvider from "./Context/GlobalProvider";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar />
+    <GlobalProvider>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
 
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/catalog" element={<Catalog />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/shoplist" element={<ShopList />} />
-          <Route path="/admin" element={<Admin />} />
-        </Routes>
+          <Routes>
+            <Route path="/home" element={<Home />} />
+            <Route path="/catalog" element={<Catalog />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/shoplist" element={<ShopList />} />
+            <Route path="/admin" element={<Admin />} />
+          </Routes>
 
-        <Footer />
-      </div>
-    </BrowserRouter>
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </GlobalProvider>
   );
 }
 
