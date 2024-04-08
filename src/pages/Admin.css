@@ -4,17 +4,18 @@
 
 .admin .parent {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 2 auto;
   height: 10vh;
   vertical-align: top;
 }
 
 .admin .prods {
-  flex: 1;
-  margin: 0 20px;
-  max-width: 400px;
-  margin-left: 3rem;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .admin .coupons {
@@ -22,7 +23,7 @@
   margin: 2 20px;
   max-width: 500px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .admin .form {
@@ -30,12 +31,12 @@
   border-radius: 3px;
   padding: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin: 2 auto;
   vertical-align: top;
 }
 
-.admin .form div {
+.admin .form-group {
   margin-bottom: 10px;
 }
 

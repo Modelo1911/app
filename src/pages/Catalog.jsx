@@ -4,58 +4,58 @@ import Product from "../components/Product";
 function Catalog() {
   const data = [
     {
-      title: "Aloe Vera",
-      price: 2.99,
-      category: "Plant",
-      image: "Aloe.jpg",
+      title: "Armasight PVS-14",
+      price: 2999,
+      category: "Night vision",
+      image: "pvs-14.jpg",
       _id: 1,
     },
 
     {
-      title: "Sage",
-      price: 1.99,
-      category: "Herb",
-      image: "sage.jpg",
+      title: "Armasight BNVD-40",
+      price: 7000,
+      category: "Night vision",
+      image: "bnvd-40.jpg",
       _id: 2,
     },
 
     {
-      title: " Bell Pepper",
-      price: 4.99,
-      category: "Plant",
-      image: "pepper.jpg",
+      title: "Blue Force Rifle Sling",
+      price: 59.99,
+      category: "Parts",
+      image: "sling.jpg",
       _id: 3,
     },
 
     {
-      title: "Thyme",
-      price: 0.99,
-      category: "Herb",
-      image: "thyme.jpg",
+      title: "Trijicon ACOG",
+      price: 1300,
+      category: "Optic",
+      image: "acog.jpg",
       _id: 4,
     },
 
     {
-      title: "Cilantro",
-      price: 0.89,
-      category: "Herb",
-      image: "cilantro.jpg",
+      title: "Duramag Steel Magazine",
+      price: 14.99,
+      category: "Parts",
+      image: "mag.jpg",
       _id: 5,
     },
 
     {
-      title: "Tomato",
-      price: 2.99,
-      category: "Fruit",
-      image: "tomato.jpg",
+      title: "Magpul Pmag (Tan Only)",
+      price: 15.99,
+      category: "Parts",
+      image: "pmag.jpg",
       _id: 6,
     },
 
     {
-      title: "Elderberry",
-      price: 4.99,
-      category: "Fruit",
-      image: "elderberry.jpg",
+      title: "Duel Magazine Pouch",
+      price: 12.99,
+      category: "Parts",
+      image: "mag pouch.jpg",
       _id: 7,
     },
   ];
@@ -63,8 +63,11 @@ function Catalog() {
   return (
     <div className="catalog page">
       <h1>Our Catalog!</h1>
+      <h6>For sale only inside the continentel United States</h6>
 
-      {data.map((prod) => (<Product  key={prod._id} info={prod} />))}
+      {data.map((prod) => (
+        <Product key={prod._id} info={prod} />
+      ))}
     </div>
   );
 }

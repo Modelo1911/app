@@ -9,6 +9,7 @@ import ShopList from "./pages/ShopList";
 import Home from "./pages/Home";
 import Admin from "./pages/Admin";
 import GlobalProvider from "./Context/GlobalProvider";
+import Cart from "./pages/Cart";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/shoplist" element={<ShopList />} />
             <Route path="/admin" element={<Admin />} />
+            <Route path="/cart" element={<Cart />} />
           </Routes>
 
           <Footer />
