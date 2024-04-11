@@ -25,9 +25,10 @@ function Navbar() {
       data-bs-theme="dark"
     >
       <div className="container-fluid">
-        <Link className="navbar-brand" to="/">
-          Tactically Aquired
+        <Link className="navbar-brand" to="/home">
+          Tactically Aquired Surplus
         </Link>
+        
         <button
           className="navbar-toggler"
           type="button"
@@ -90,6 +91,11 @@ function Navbar() {
             <button className="btn btn-outline-success" type="submit">
               {getNumProducts()}
               Search
+              <Link
+                className="nav-link active"
+                aria-current="page"
+                to="/cart"
+              ></Link>
             </button>
           </div>
         </div>

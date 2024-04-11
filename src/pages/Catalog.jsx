@@ -5,7 +5,7 @@ function Catalog() {
   const data = [
     {
       title: "Armasight PVS-14",
-      price: 2999,
+      price: 3000,
       category: "Night vision",
       image: "pvs-14.jpg",
       _id: 1,
@@ -21,7 +21,7 @@ function Catalog() {
 
     {
       title: "Blue Force Rifle Sling",
-      price: 59.99,
+      price: 39.99,
       category: "Parts",
       image: "sling.jpg",
       _id: 3,
@@ -29,7 +29,7 @@ function Catalog() {
 
     {
       title: "Trijicon ACOG",
-      price: 1300,
+      price: 1100,
       category: "Optic",
       image: "acog.jpg",
       _id: 4,
@@ -63,7 +63,8 @@ function Catalog() {
   return (
     <div className="catalog page">
       <h1>Our Catalog!</h1>
-      <h6>For sale only inside the continentel United States</h6>
+      <h3>For sale only inside the continentel United States</h3>
+      <h6>All products listed below were ethically aquired and/or willingly donated for resale </h6>
 
       {data.map((prod) => (
         <Product key={prod._id} info={prod} />

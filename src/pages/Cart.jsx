@@ -45,9 +45,9 @@ function Cart() {
                 <label>{prod.category}</label>
               </div>
 
-              <label>{prod.price}</label>
+              <label>${prod.price}</label>
               <label>{prod.quantity}</label>
-              <label>{prod.quantity * prod.price}</label>
+              <label>${prod.quantity * prod.price}</label>
               <button className="btn btn-sm btn-danger">Delete</button>
             </div>
           ))}
