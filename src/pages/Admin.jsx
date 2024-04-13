@@ -57,7 +57,7 @@ function Admin() {
   return (
     <div className="parent">
       <h1>Store Administration</h1>
-      <div className="col-sm-4 ">
+      <div className="col-sm-4">
         <h3>Products</h3>
         <div className="form-group">
           <label className="form-label">Title</label>

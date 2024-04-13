@@ -11,12 +11,11 @@
 }
 
 .admin .form-group {
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .admin .form .ul {
   list-style: none;
 }
-
 
 /**react context api**/
