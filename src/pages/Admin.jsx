@@ -57,18 +57,16 @@ function Admin() {
   return (
     <div className="parent">
       <h1>Store Administration</h1>
-      <div className="prods">
-        <div className="col-sm-4">
-          <h3>Products</h3>
-          <div className="form-group">
-            <label className="form-label">Title</label>
-            <input
-              name="title"
-              type="text"
-              className="form-control"
-              onChange={handleProductChange}
-            />
-          </div>
+      <div className="col-sm-4 ">
+        <h3>Products</h3>
+        <div className="form-group">
+          <label className="form-label">Title</label>
+          <input
+            name="title"
+            type="text"
+            className="form-control"
+            onChange={handleProductChange}
+          />
           <div>
             <label className="form-label">Category</label>
             <input
@@ -109,8 +107,10 @@ function Admin() {
             ))}
           </ul>
         </div>
-        <div className="col-sm-3">
-          <h3>Coupons</h3>
+      </div>
+      <div className="col-sm-4">
+        <h3>Coupons</h3>
+        <div>
           <div className="form-group">
             <label className="form-label">Code</label>
             <input
@@ -134,14 +134,15 @@ function Admin() {
               Save Coupon
             </button>
           </div>
-          <ul>
-            {allCoupons.map((c, index) => (
-              <li key={index}>
-                {c.code} - ${c.discount}
-              </li>
-            ))}
-          </ul>
         </div>
+
+        <ul>
+          {allCoupons.map((c, index) => (
+            <li key={index}>
+              {c.code} - ${c.discount}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

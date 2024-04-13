@@ -1,6 +1,11 @@
 .footer h3 {
-    background-color: black;
-    color: white;
-    margin: auto;
-    height: 4vh;
+  background-color: black;
+  color: white;
+  margin: auto;
+  height: 4vh;
+}
+
+.footer {
+  margin-top: auto;
+  margin-bottom: auto;
 }
